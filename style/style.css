@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&family=Montserrat&family=Montserrat+Alternates&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Coming Soon', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+    --bg: #101110;
+    --primary: #E5771C;
+    --text: #fff;
+
+}
+
+body,
+html {
+width: 100%;
+height: 100%;
+background-color: var(--bg);
+}
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+
+}
+#home {
+    position: relative;
+}
+
+#container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text {
+    color: var(--text);
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#heading-about {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 4rem;
+    width: 35rem;
+    padding: 4rem 4rem;
+}
+
+#line1 {
+    width: 80rem;
+    margin: 2rem 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    text-align: left;
+}
+
+#line2 {
+    width: 80rem;
+    margin: 2rem 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    text-align: left;
+}
+
+#line3 {
+    width: 80rem;
+    margin: 2rem 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/footerbg.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+footer h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 3rem;
+    width: 35rem;
+    margin-left: 4rem;
+    font-weight: 900;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-self: right;
+}
+
+.icon-container *:hover {
+    color: var(--primary);
+    scale: 0.8;
+}
+
+ion-icon {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+
+
+.position {
+    margin-top: -13rem;
+    margin-left: 28rem;
+}
