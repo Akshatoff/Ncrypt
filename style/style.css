@@ -9,9 +9,9 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -23,10 +23,11 @@ box-sizing: border-box;
 
 body,
 html {
-width: 100%;
-height: 100%;
-background-color: var(--bg);
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
 }
+
 ::-webkit-scrollbar {
     width: 2px;
 }
@@ -35,6 +36,20 @@ main {
     width: 100%;
     height: auto;
 
+}
+
+.website {
+    display: none;
+}
+
+.letter {
+    color: var(--primary);
+}
+#robo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -15rem;
+    margin-bottom: 5rem;
 }
 #home {
     position: relative;
@@ -55,6 +70,32 @@ main {
 .section {
     width: 100%;
     min-height: 100vh;
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    z-index: 1000;
+}
+
+#robo-container {
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+}
+
+#robo-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+    color: var(--text);
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
 }
 
 #heading-about {
@@ -98,7 +139,7 @@ footer {
 }
 
 footer h1 {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     width: 35rem;
     margin-left: 4rem;
