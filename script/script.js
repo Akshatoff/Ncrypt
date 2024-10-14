@@ -2,6 +2,37 @@ import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
 
+const upload = document.getElementById("upload");
+const view = document.getElementById("view");
+
+upload.classList.add("active");
+
+upload.addEventListener("click", function () {
+    upload.classList.add("active");
+    view.classList.remove("active");
+})
+
+view.addEventListener("click", function () {
+    upload.classList.remove("active");
+    view.classList.add("active")
+})
+
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const containerf = document.getElementById('containerform');
+const transbtn = document.getElementById("trans");
+
+signUpButton.addEventListener('click', () => {
+	containerf.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	containerf.classList.remove("right-panel-active");
+}); 
+
+transbtn.addEventListener("click", () => {
+    containerf.classList.add("right-panel-active");
+})
 
 const scene = new THREE.Scene();
 
