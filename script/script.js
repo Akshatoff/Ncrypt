@@ -20,7 +20,8 @@ view.addEventListener("click", function () {
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const containerf = document.getElementById('containerform');
-const transbtn = document.getElementById("trans");
+const transbtn = document.getElementById("tran");
+
 
 signUpButton.addEventListener('click', () => {
 	containerf.classList.add("right-panel-active");
@@ -30,9 +31,13 @@ signInButton.addEventListener('click', () => {
 	containerf.classList.remove("right-panel-active");
 }); 
 
-transbtn.addEventListener("click", () => {
+transbtn.addEventListener("click", function() {
     containerf.classList.add("right-panel-active");
+  
+    
 })
+
+
 
 const scene = new THREE.Scene();
 
