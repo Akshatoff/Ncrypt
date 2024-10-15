@@ -236,6 +236,13 @@ input {
 	width: 100%;
 }
 
+#dd {
+	padding: 1rem 2rem;
+	margin-top: 2rem;
+	border: 2px solid var(--primary);
+	border-radius: 20px;
+}
+
 .uploadsection .container {
 	background-color: #fff;
 	border-radius: 10px;
@@ -243,10 +250,11 @@ input {
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 768px;
+	width: 80rem;
 	max-width: 100%;
 	min-height: 480px;
 }
+
 
 .form-container {
 	position: absolute;

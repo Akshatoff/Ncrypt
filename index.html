@@ -52,7 +52,7 @@
                 <h2 class="text" id="view">View Work</h2>
                 
             </div>
-            <div class="uploadsection">
+            <div class="uploadsection" id="uploadsection">
                 
 <div class="container" id="containerform">
 	<div class="form-container sign-up-container">
@@ -60,11 +60,17 @@
 			<h1>Submit Project</h1>
 			
 			<span>Enter the Detials below</span>
-			<input type="text" placeholder="Category" />
-			<input type="text" placeholder="Image Link" />
-			<input type="text" placeholder="3d Model" />
-			<input type="text" placeholder="Poster" />
-			<input type="text" placeholder="Digital Art" />
+			<select name="Choose your category" id="dd" aria-placeholder="Choose Category">
+                <option value="cat">Choose Your Category</option>
+                <option value="1">Image Project</option>
+                <option value="2">3D Model</option>
+                <option value="3">Poster</option>
+                <option value="4">Digital Art</option>
+            </select>
+			<input type="text" placeholder="Image Link" id="image" />
+			<input type="text" placeholder="3d Model" id="model"/>
+			<input type="text" placeholder="Poster" id="poster"/>
+			<input type="text" placeholder="Digital Art" id="da"/>
 			<button>Submit</button>
 		</form>
 	</div>
@@ -95,6 +101,9 @@
 	</div>
 </div>
 
+            </div>
+            <div id="viewsection">
+                
             </div>
         </div>
         <footer>
