@@ -255,6 +255,202 @@ input {
 	min-height: 480px;
 }
 
+.viewsection {
+	display: none;
+	
+}
+.viewnav{
+	display: flex;
+	float: left;
+	flex-direction: column;
+	gap: 2rem;
+	margin: 8rem 2rem;
+}
+
+.viewnav ion-icon {
+	color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+}
+
+ion-icon:hover {
+	color: var(--primary);
+    scale: 0.8;
+}
+
+.activei {
+	color: var(--primary) !important;
+    scale: 0.8 !important;
+}
+
+
+
+#postersection, #modelsectin, #dasection {
+	display: none;
+
+}
+
+.card {
+	background-color: #fff;
+	max-width: 360px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 2rem;
+	box-shadow: 0px 1rem 1.5rem rgba(0,0,0,0.5);
+
+  }
+  .card .banner {
+	background-image: url("https://images.unsplash.com/photo-1545703549-7bdb1d01b734?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 11rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	box-sizing: border-box;
+  }
+  .card .banner svg {
+	background-color: #fff;
+	width: 8rem;
+	height: 8rem;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+	border-radius: 50%;
+	transform: translateY(50%);
+	transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  }
+  .card .banner svg:hover {
+	transform: translateY(50%) scale(1.3);
+  }
+  .card .menu {
+	width: 100%;
+	height: 5.5rem;
+	padding: 1rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	position: relative;
+	box-sizing: border-box;
+  }
+  .card .menu .opener {
+	width: 2.5rem;
+	height: 2.5rem;
+	position: relative;
+	border-radius: 50%;
+	transition: background-color 100ms ease-in-out;
+  }
+  .card .menu .opener:hover {
+	background-color: #f2f2f2;
+  }
+  .card .menu .opener span {
+	background-color: #404040;
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 0.2rem);
+	border-radius: 50%;
+  }
+  .card .menu .opener span:nth-child(1) {
+	top: 0.45rem;
+  }
+  .card .menu .opener span:nth-child(2) {
+	top: 1.05rem;
+  }
+  .card .menu .opener span:nth-child(3) {
+	top: 1.65rem;
+  }
+  .card h2.name {
+	text-align: center;
+	padding: 0 2rem 0.5rem;
+	margin-top: 2rem;
+  }
+  .card .title {
+	color: #a0a0a0;
+	font-size: 0.85rem;
+	text-align: center;
+	padding: 0 2rem 1.2rem;
+  }
+  
+  .card ion-icon {
+
+	color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
+  }
+  .card .actions .follow-info h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  .card .actions .follow-info h2 a {
+	text-decoration: none;
+	padding: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.8rem;
+	transition: background-color 100ms ease-in-out;
+  }
+  .card .actions .follow-info h2 a span {
+	color: #1c9eff;
+	font-weight: bold;
+	transform-origin: bottom;
+	transform: scaleY(1.3);
+	transition: color 100ms ease-in-out;
+  }
+  .card .actions .follow-info h2 a small {
+	color: #afafaf;
+	font-size: 0.85rem;
+	font-weight: normal;
+  }
+  .card .actions .follow-info h2 a:hover {
+	background-color: #f2f2f2;
+  }
+  .card .actions .follow-info h2 a:hover span {
+	color: #007ad6;
+  }
+  .card .actions .follow-btn button {
+	color: inherit;
+	font: inherit;
+	font-weight: bold;
+	background-color: #ffd01a;
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 1.5rem/50%;
+	transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  }
+  .card .actions .follow-btn button:hover {
+	background-color: #efb10a;
+	transform: scale(1.1);
+  }
+  .card .actions .follow-btn button:active {
+	background-color: #e8a200;
+	transform: scale(1);
+  }
+  .card .desc {
+	text-align: justify;
+	padding: 2rem 2rem 1rem;
+	font-family: "Poppins", sans-serif;
+  }
+  
+  .image-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 2rem;
+	margin-top: 2rem;
+  }
 
 .form-container {
 	position: absolute;
@@ -286,6 +482,8 @@ input {
 	z-index: 5;
 	animation: show 0.6s;
 }
+
+
 
 @keyframes show {
 	0%, 49.99% {
@@ -366,7 +564,107 @@ input {
 	transform: translateX(20%);
 }
 
+.card {
+	position: relative;
+	padding: 1rem;
+	width: 350px;
+	height: 450px;
+	box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+	border-radius: 0.9rem;
+	background-color: var(--red-card);
+	color: var(--text);
+	cursor: pointer;
+	margin-top: 5rem;
+  }
+  
+  .card-blue {
+	background: var(--blue-card);
+  }
+  
+  .product-image {
+	height: 230px;
+	width: 100%;
+	transform: translate(0, -1.5rem);
+	transition: transform 500ms ease-in-out;
+	filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+  }
 
+  .modl {
+	width: 20rem;
+  }
+  .product-info {
+	text-align: center;
+  }
+  
+  .card:hover .product-image {
+	transform: translate(-1.5rem, -7rem) rotate(-20deg);
+  }
+  
+  .product-info h2 {
+	font-size: 1.4rem;
+	font-weight: 600;
+  }
+  .product-info p {
+	margin: 0.4rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+  }
+  .price {
+	font-size: 1.2rem;
+	font-weight: 500;
+  }
+  .btn {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 0.8rem;
+  }
+  .buy-btn {
+	background-color: var(--btn);
+	padding: 0.6rem 3.5rem;
+	font-weight: 600;
+	font-size: 1rem;
+	transition: 300ms ease;
+  }
+  .buy-btn:hover {
+	background-color: var(--btn-hover);
+  }
+  .fav {
+	box-sizing: border-box;
+	background: #fff;
+	padding: 0.5rem 0.5rem;
+	border: 1px solid#000;
+	display: grid;
+	place-items: center;
+  }
+  
+  .svg {
+	height: 25px;
+	width: 25px;
+	fill: #fff;
+	transition: all 500ms ease;
+  }
+  
+  .fav:hover .svg {
+	fill: #000;
+  }
+  
+  @media screen and (max-width: 800px) {
+	body {
+	  height: auto;
+	}
+	.container {
+	  padding: 2rem 0;
+	  width: 100%;
+	  flex-direction: column;
+	  gap: 3rem;
+	}
+  }
+
+  #modelsection {
+	gap: 4rem;
+	justify-content: center;
+  }
 
 footer {
     width: 100%;
@@ -397,7 +695,7 @@ footer h1 {
     scale: 0.8;
 }
 
-ion-icon {
+footer ion-icon {
     color: white;
     font-size: 3rem;
     cursor: pointer;

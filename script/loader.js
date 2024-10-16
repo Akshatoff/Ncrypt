@@ -47,9 +47,16 @@ scene.add(topLight);
 const ambientLight = new THREE.AmbientLight(0x333333, 5);
 scene.add(ambientLight);
 
+var maxrotation = Math.PI;
+
 
 function animate() {
     requestAnimationFrame(animate);
+    if (object && objToRender === "robo") {
+        
+        object.rotation.y += 0.01;
+        
+    }
     renderer.render(scene, camera);
 }
 

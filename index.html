@@ -50,60 +50,162 @@
             <div class="nav">
                 <h2 class="text" id="upload">Upload Work</h2>
                 <h2 class="text" id="view">View Work</h2>
-                
+
             </div>
             <div class="uploadsection" id="uploadsection">
-                
-<div class="container" id="containerform">
-	<div class="form-container sign-up-container">
-		<form id="trs">
-			<h1>Submit Project</h1>
-			
-			<span>Enter the Detials below</span>
-			<select name="Choose your category" id="dd" aria-placeholder="Choose Category">
-                <option value="cat">Choose Your Category</option>
-                <option value="1">Image Project</option>
-                <option value="2">3D Model</option>
-                <option value="3">Poster</option>
-                <option value="4">Digital Art</option>
-            </select>
-			<input type="text" placeholder="Image Link" id="image" />
-			<input type="text" placeholder="3d Model" id="model"/>
-			<input type="text" placeholder="Poster" id="poster"/>
-			<input type="text" placeholder="Digital Art" id="da"/>
-			<button>Submit</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form>
-			<h1>Team Details</h1>
-			
-			<span>Please fill the details below</span>
-			<input type="text" placeholder="Team Name" />
-			<input type="School Name" placeholder="School Name" />
-			
-			<button type="button" id="tran">Submit</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Fill in the detials carefully and accurately</p>
-				<button class="ghost" id="signUp">Project Submission</button>
-			</div>
-		</div>
-	</div>
-</div>
+
+                <div class="container" id="containerform">
+                    <div class="form-container sign-up-container">
+                        <form id="trs">
+                            <h1>Submit Project</h1>
+
+                            <span>Enter the Detials below</span>
+                            <select name="Choose your category" id="dd" aria-placeholder="Choose Category">
+                                <option value="cat">Choose Your Category</option>
+                                <option value="1">Image Project</option>
+                                <option value="2">3D Model</option>
+                                <option value="3">Poster</option>
+                                <option value="4">Digital Art</option>
+                            </select>
+                            <input type="text" placeholder="Image Link" id="image" />
+                            <input type="text" placeholder="3d Model" id="model" />
+                            <input type="text" placeholder="Poster" id="poster" />
+                            <input type="text" placeholder="Digital Art" id="da" />
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in-container">
+                        <form>
+                            <h1>Team Details</h1>
+
+                            <span>Please fill the details below</span>
+                            <input type="text" placeholder="Team Name" />
+                            <input type="School Name" placeholder="School Name" />
+
+                            <button type="button" id="tran">Submit</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h1>Welcome Back!</h1>
+                                <p>To keep connected with us please login with your personal info</p>
+                                <button class="ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h1>Hello, Friend!</h1>
+                                <p>Fill in the detials carefully and accurately</p>
+                                <button class="ghost" id="signUp">Project Submission</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <div id="viewsection">
-                
+                <div class="viewnav">
+                    <ion-icon name="images-outline" id="imagenav"></ion-icon>
+                    <ion-icon name="cube-outline" id="modelnav"></ion-icon>
+                    <ion-icon name="newspaper-outline" id="posternav"></ion-icon>
+                    <ion-icon name="pencil-outline" id="danav"></ion-icon>
+                </div>
+                <div id="imagesection">
+                    <div class="image-container">
+
+                        <div class="card">
+                            <div class="banner">
+                            </div>
+
+                            <h2 class="name">Morgan Sweeney</h2>
+                           
+                            <div class="desc">Morgan has collected ants since they were six years old and now has many
+                                dozen ants but none in their pants.</div>
+                                
+                                <ion-icon name="hardware-chip"></ion-icon>
+                            </div>
+                        <div class="card">
+                            <div class="banner">
+                            </div>
+
+                            <h2 class="name">Morgan Sweeney</h2>
+                           
+                            <div class="desc">Morgan has collected ants since they were six years old and now has many
+                                dozen ants but none in their pants.</div>
+                                
+                                <ion-icon name="hardware-chip"></ion-icon>
+                            </div>
+
+                        <div class="card">
+                            <div class="banner">
+                            </div>
+
+                            <h2 class="name">Morgan Sweeney</h2>
+                           
+                            <div class="desc">Morgan has collected ants since they were six years old and now has many
+                                dozen ants but none in their pants.</div>
+                                
+                                <ion-icon name="hardware-chip"></ion-icon>
+                            </div>
+                            
+                            
+                    </div>
+                </div>
+                <div id="modelsection">
+                    <section class="card">
+                        <div class="product-image">
+                          <img src="https://i.ibb.co/cNWqxGx/red.png" alt="OFF-white Red Edition" draggable="false" class="modl"/>
+                        </div>
+                        <div class="product-info">
+                          <h2>Nike X OFF-white</h2>
+                          <p>The 10: Air Jordan 1 off-white - Chicago</p>
+                          <div class="price">$999</div>
+                        </div>
+                        <div class="btn">
+                          <button class="fav">
+                            <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                              <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+                            </svg>
+                          </button>
+                        </div>
+                      </section>
+                    <section class="card">
+                        <div class="product-image">
+                          <img src="https://i.ibb.co/cNWqxGx/red.png" alt="OFF-white Red Edition" draggable="false" class="modl"/>
+                        </div>
+                        <div class="product-info">
+                          <h2>Nike X OFF-white</h2>
+                          <p>The 10: Air Jordan 1 off-white - Chicago</p>
+                          <div class="price">$999</div>
+                        </div>
+                        <div class="btn">
+                          <button class="fav">
+                            <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                              <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+                            </svg>
+                          </button>
+                        </div>
+                      </section>
+                    <section class="card">
+                        <div class="product-image">
+                          <img src="https://i.ibb.co/cNWqxGx/red.png" alt="OFF-white Red Edition" draggable="false" class="modl"/>
+                        </div>
+                        <div class="product-info">
+                          <h2>Nike X OFF-white</h2>
+                          <p>The 10: Air Jordan 1 off-white - Chicago</p>
+                          <div class="price">$999</div>
+                        </div>
+                        <div class="btn">
+                          <button class="fav">
+                            <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                              <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+                            </svg>
+                          </button>
+                        </div>
+                      </section>
+                </div>
+                <div id="postersection"></div>
+                <div id="dasection"></div>
+
             </div>
         </div>
         <footer>

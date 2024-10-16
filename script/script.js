@@ -11,12 +11,67 @@ const image = document.getElementById("image");
 const model = document.getElementById("model")
 const poster = document.getElementById("poster");
 const da = document.getElementById("da");
+const imagenav = document.getElementById("imagenav");
+const modelnav = document.getElementById("modelnav");
+const posternav = document.getElementById("posternav");
+const danav = document.getElementById("danav");
+const imagesection = document.getElementById("imagesection");
+const modelsection = document.getElementById("modelsection");
+const postersection = document.getElementById("postersection");
+const dasection = document.getElementById("dasection")
 
 image.style.display = "none";
 model.style.display = "none";
 poster.style.display = "none";
 da.style.display = "none";
+imagenav.classList.add("activei")
+imagesection.style.display = "flex"
+modelsection.style.display = "none";
+postersection.style.display = "none";
+dasection.style.display = "none";
 
+
+imagenav.addEventListener("click", function () {
+    imagenav.classList.add("activei");
+    modelnav.classList.remove("activei");
+    posternav.classList.remove("activei");
+    danav.classList.remove("activei");
+    imagesection.style.display = "flex";
+    modelsection.style.display = "none";
+    postersection.style.display = "none";
+    dasection.style.display = "none";
+});
+
+modelnav.addEventListener("click", function () {
+    imagenav.classList.remove("activei");
+    modelnav.classList.add("activei");
+    posternav.classList.remove("activei");
+    danav.classList.remove("activei");
+    imagesection.style.display = "none";
+    modelsection.style.display = "flex";
+    postersection.style.display = "none";
+    dasection.style.display = "none";
+})
+posternav.addEventListener("click", function () {
+    imagenav.classList.remove("activei");
+    modelnav.classList.remove("activei");
+    posternav.classList.add("activei");
+    danav.classList.remove("activei");
+    imagesection.style.display = "none";
+    modelsection.style.display = "none";
+    postersection.style.display = "flex";
+    dasection.style.display = "none";
+})
+danav.addEventListener("click", function () {
+    imagenav.classList.remove("activei");
+    modelnav.classList.remove("activei");
+    posternav.classList.remove("activei");
+    danav.classList.add("activei");
+    imagesection.style.display = "none";
+    modelsection.style.display = "none";
+    postersection.style.display = "none";
+    dasection.style.display = "flex";
+})
 
 dd.addEventListener("change", function () {
     if (dd.value == 1) {
@@ -47,6 +102,7 @@ dd.addEventListener("change", function () {
 
 
 
+views.style.display = "none";
 
 
 
