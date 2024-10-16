@@ -292,6 +292,7 @@ ion-icon:hover {
 
 }
 
+
 .card {
 	background-color: #fff;
 	max-width: 360px;
@@ -385,6 +386,10 @@ ion-icon:hover {
 	margin-right: auto;
 	margin-bottom: 1rem;
   }
+
+  .card .fav {
+	margin-bottom: 1rem
+  }
   .card .actions .follow-info h2 {
 	text-align: center;
 	width: 50%;
@@ -450,6 +455,8 @@ ion-icon:hover {
 	flex-direction: row;
 	gap: 2rem;
 	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
   }
 
 .form-container {
@@ -564,7 +571,7 @@ ion-icon:hover {
 	transform: translateX(20%);
 }
 
-.card {
+.cardmo {
 	position: relative;
 	padding: 1rem;
 	width: 350px;
@@ -596,7 +603,7 @@ ion-icon:hover {
 	text-align: center;
   }
   
-  .card:hover .product-image {
+  .cardmo:hover .product-image {
 	transform: translate(-1.5rem, -7rem) rotate(-20deg);
   }
   
@@ -664,6 +671,60 @@ ion-icon:hover {
   #modelsection {
 	gap: 4rem;
 	justify-content: center;
+  }
+
+
+  .containercad {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+.cta {
+	background: #333;
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+  }
+  .cta:hover img {
+	top: -10%;
+	filter: brightness(70%);
+  }
+  .cta:hover .text {
+	bottom: 0;
+  }
+  .cta img {
+	bottom: 0;
+	filter: brightness(100%);
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: 0.5s ease-in-out;
+	width: 115%;
+  }
+  .cta .text {
+	bottom: -50%;
+	padding: 15px;
+	position: absolute;
+	transition: 0.5s ease-in-out;
+  }
+  .cta .text h2 {
+	color: #fff;
+	display: inline-block;
+	font-weight: 300;
+	margin-bottom: 5px;
+	position: relative;
+	margin-top: 2rem;
+  }
+  .cta .text p {
+	color: #fff;
+	font-weight: 300;
   }
 
 footer {
