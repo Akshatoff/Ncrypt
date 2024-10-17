@@ -142,6 +142,25 @@ transbtn.addEventListener("click", function () {
 
 })
 
+var countdown = new Date("Oct 26, 2024 00:00:00").getTime();
+var x = setInterval(function () {
+    var now = new Date().getTime();
+    var time = countdown - now;
+    var days = Math.floor(time / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((time % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+}, 1000)
+
+
+
+
 
 
 const scene = new THREE.Scene();
@@ -189,7 +208,7 @@ const ambientLight = new THREE.AmbientLight(0x333333, 5);
 scene.add(ambientLight);
 
 function addStar() {
-    const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+    const geometry = new THREE.SphereGeometry(0.1, 10, 10);
     const material = new THREE.MeshStandardMaterial({ color: 0xE5771C });
     const star = new THREE.Mesh(geometry, material);
 
@@ -202,7 +221,7 @@ function addStar() {
     return star;
 }
 
-Array(400).fill().forEach(() => {
+Array(800).fill().forEach(() => {
     stars.push(addStar());
 });
 
@@ -250,15 +269,12 @@ animate();
 // Initialize Lenis
 const lenis = new Lenis();
 
-// Listen for the scroll event and log the event data
-lenis.on('scroll', (e) => {
-  console.log(e);
-});
+
 
 // Use requestAnimationFrame to continuously update the scroll
 function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
+    lenis.raf(time);
+    requestAnimationFrame(raf);
 }
 
 requestAnimationFrame(raf);
