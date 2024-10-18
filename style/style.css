@@ -215,7 +215,7 @@ main {
 	scale: 0.6;
 	animation: move 2s linear infinite;
 	transition: all 200ms ease-in-out;
-	margin-top: -3rem;
+	margin-top: -15rem;
 }
 
 .slider {
