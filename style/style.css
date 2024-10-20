@@ -48,9 +48,7 @@ main {
 
 }
 
-.website {
-    display: none;
-}
+
 
 .letter {
     color: var(--primary);
@@ -342,7 +340,7 @@ main {
   }
   .content button {
 	width: fit-content;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: var(--primary);
 	color: rgba(0, 0, 0, 0.9);
 	border: 0;
 	border-radius: 0.25rem;
