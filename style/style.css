@@ -36,6 +36,12 @@ html {
     width: 2px;
 }
 
+@font-face {
+	font-family: Droid-Logo;
+	src: url("../assets/font/DroidLogo-Bold.ttf");
+
+}
+
 main {
     width: 100%;
     height: auto;
@@ -48,6 +54,8 @@ main {
 
 .letter {
     color: var(--primary);
+	font-family: Droid-Logo, sans-serif;
+	
 }
 #robo-container {
     display: flex;
@@ -177,6 +185,15 @@ main {
     text-align: left;
 }
 
+.crux {
+	width: 30rem;
+}
+
+#ccc {
+	font-size: 3.5rem;
+	margin-left: 4rem;
+}
+
 #event-head {
 	font-family: "Poppins", sans-serif;
 	padding-top: 10rem;
@@ -202,6 +219,7 @@ main {
 
 .countdown div p {
 	font-size: 5rem;
+	font-family: 'Coming Soon', cursive;
 	
 }
 
@@ -216,6 +234,15 @@ main {
 	animation: move 2s linear infinite;
 	transition: all 200ms ease-in-out;
 	margin-top: -15rem;
+}
+
+#heading-event {
+	font-family: "Poppins", sans-serif;
+	font-size: 3rem;
+	margin-left: 4rem;
+	text-align: center;
+	margin-top: -10rem;
+	margin-bottom: 2rem;
 }
 
 .slider {
@@ -675,9 +702,9 @@ ion-icon:hover {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: var(--primary);
+	background: -webkit-linear-gradient(to right, #FF4B2B, #FF4B2B);
+	background: linear-gradient(to right, #FF4B2B,#FF4B2B);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -764,6 +791,7 @@ ion-icon:hover {
   .product-info h2 {
 	font-size: 1.4rem;
 	font-weight: 600;
+	
   }
   .product-info p {
 	margin: 0.4rem;
@@ -831,7 +859,7 @@ ion-icon:hover {
 footer {
     width: 100%;
     height: 100vh;
-    background: url("../assets/footerbg.png");
+    background: url("../assets/images/footer.png");
     background-size: cover;
     display: flex;
     align-items: center;
