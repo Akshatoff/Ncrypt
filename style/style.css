@@ -25,6 +25,10 @@ h1,h2,p {
     font-family: "Montserrat", sans-serif;
 }
 
+.link {
+	text-decoration: none;
+}
+
 body,
 html {
     width: 100%;
