@@ -60,12 +60,17 @@ main {
 
 .robo-img {
 	width: 30rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-left: -3rem;
 	
 }
 
-
+@media screen and (min-width: 1900px){
+	.robo-img {
+		margin-top: 7rem;
+		width: 45rem;
+	}
+}
 
 .letter {
     color: var(--primary);
@@ -804,7 +809,7 @@ ion-icon:hover {
   }
   
   .cardmo:hover .product-image {
-	transform: translate(-1.5rem, -7rem);
+	transform: translate(-1.5rem, -3rem);
   }
   
   .product-info h2 {
