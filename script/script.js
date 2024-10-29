@@ -142,7 +142,7 @@ transbtn.addEventListener("click", function () {
 
 })
 
-var countdown = new Date("Oct 26, 2025 00:00:00").getTime();
+var countdown = new Date("Nov 8, 2024 00:00:00").getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();
     var time = countdown - now;
